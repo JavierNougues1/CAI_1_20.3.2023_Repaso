@@ -1,0 +1,15 @@
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\bin\Debug\net6.0\EjerciciosRepaso.exe
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\bin\Debug\net6.0\EjerciciosRepaso.deps.json
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\bin\Debug\net6.0\EjerciciosRepaso.runtimeconfig.json
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\bin\Debug\net6.0\EjerciciosRepaso.dll
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\bin\Debug\net6.0\EjerciciosRepaso.pdb
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.csproj.AssemblyReference.cache
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.AssemblyInfoInputs.cache
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.AssemblyInfo.cs
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.csproj.CoreCompileInputs.cache
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.dll
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\refint\EjerciciosRepaso.dll
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.pdb
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\EjerciciosRepaso.genruntimeconfig.cache
+C:\Users\I546466\Documents\GitHub\CAI_1_20.3.2023_Repaso\EjerciciosRepaso\EjerciciosRepaso\obj\Debug\net6.0\ref\EjerciciosRepaso.dll
