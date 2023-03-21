@@ -103,3 +103,126 @@ Console.WriteLine("Introduzca un número:");
 string numero = Console.ReadLine();
 string inversa2 = new string(numero.ToCharArray().Reverse().ToArray());
 Console.WriteLine("Número ingresado: " + numero + " -> Número a la inversa: " + inversa2);
+
+
+/********************************************************************************************************************************************************************
+                            Ejercicio VII
+********************************************************************************************************************************************************************
+Crear una aplicación que, cuando el usuario ingrese cinco números, indique cuál es mayor, cuál es valor intermedio y cuál el menor.
+*/
+int mayor, intermedio, menor;
+
+Console.WriteLine("Ingrese el primer número:");
+int numero1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese el segundo número:");
+int numero2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese el tercero número:");
+int numero3 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese el cuarto número:");
+int numero4 = int.Parse(Console.ReadLine());
+Console.WriteLine("Ingrese el quinto número:");
+int numero5 = int.Parse(Console.ReadLine());
+
+//Repetir esta lógica para las otras posibilidades.
+if (numero1 >= numero2 && numero1 >= numero3 && numero1 >= numero4 && numero1 >= numero5)
+{
+    mayor = numero1;
+
+    if (numero2 >= numero3 && numero2 >= numero4 && numero2 >= numero5)
+    {
+        intermedio = numero2;
+
+        if (numero3 <= numero4 && numero3 <= numero5)
+        {
+            menor = numero3;
+        }
+        if (numero4 <= numero3 && numero4 <= numero3)
+        {
+            menor = numero4;
+        }
+        if (numero5 <= numero3 && numero5 <= numero4)
+        {
+            menor = numero5;
+        }
+    }
+}
+
+
+/********************************************************************************************************************************************************************
+                            Ejercicio VIII
+********************************************************************************************************************************************************************
+Crear una aplicación que, cuando el usuario ingrese una fecha, calcule la diferencia entre ésta y el día de hoy, mostrando por pantalla "La diferencia de fechas es de *nnnnn*
+días."
+*/
+DateTime fecha = DateTime.Parse(Console.ReadLine());
+TimeSpan diferencia = DateTime.Now.Subtract(fecha);
+Console.WriteLine(diferencia);
+
+
+/********************************************************************************************************************************************************************
+                            Ejercicio X
+********************************************************************************************************************************************************************
+Crear una aplicación que lea un carácter tecleado por el usuario e indique si se trata de una vocal, una cifra numérica o una consonante.
+Nota: Incluir todas las validaciones que considere necesarias (los caracteres especiales
+no deben tenerse en cuenta).
+*/
+Console.WriteLine("Ingrese un caracter:");
+string carac = Console.ReadLine().ToLower();
+
+if (carac != "," || carac != ";" || carac != "." || carac != ":" || carac != " " || carac != "-" || carac != "_" || carac != "'" || carac != "?" || carac != "!" || carac != "¡" || carac != "¿")
+{
+    if (carac == "1" || carac == "2" || carac == "3" || carac == "4" || carac == "5" || carac == "6" || carac == "7" || carac == "8" || carac == "9")
+    {
+        Console.WriteLine("El caracter ingresado es un número.");
+    }
+    else if (carac == "a" || carac == "e" || carac == "i" || carac == "o" || carac == "u")
+    {
+        Console.WriteLine("El caracter ingresado es una vocal.");
+    }
+    else
+    {
+        Console.WriteLine("El caracter ingresado es una consonante.");
+    }
+}
+
+
+
+/********************************************************************************************************************************************************************
+                            Ejercicio X
+********************************************************************************************************************************************************************
+Crear una aplicación que, cuando el usuario ingrese un nombre, un apellido y la edad en un mismo input (en cualquier orden), indique cuál es cada uno.
+*/
+//No se como hacerlo en cualquier orden.
+/*
+int edad = 0;
+string nombre, apellido;
+Console.WriteLine("Ingrese: Nombre, Apellido, Edad separado por 'espacio': ");
+string cadena = Console.ReadLine();
+
+string palabras[] = cadena.Split(' ');
+
+foreach(palabra in palabras)
+{
+    if (int.TryParse(palabra, out edad))
+    {
+        break;
+    }
+}
+foreach(palabra in palabras)
+{
+    if (palabra != edad.ToString())
+    {
+        nombre = palabra;
+    }
+    else
+    {
+        apellido = palabra;
+    }
+}
+*/
+
+
+
+
+
+
