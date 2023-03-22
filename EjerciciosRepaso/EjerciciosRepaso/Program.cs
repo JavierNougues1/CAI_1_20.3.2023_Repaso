@@ -266,3 +266,14 @@ while (true)
 }
 
 
+/********************************************************************************************************************************************************************
+                            Ejercicio XIX
+********************************************************************************************************************************************************************
+Crear una aplicación que, cuando el usuario ingrese una cantidad de palabras, las muestre por pantalla indicando el largo en cantidad de caracteres de cada una.
+*/
+Console.WriteLine("Ingrese palabras separadas por espacio:");
+string cadena = Console.ReadLine();
+foreach(var palabra2 in cadena)
+{
+    Console.WriteLine("La palabra: " + palabra2 + " contiene: " + palabra2.ToString().Length + " caracteres." );
+}
