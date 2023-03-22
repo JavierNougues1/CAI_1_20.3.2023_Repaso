@@ -222,7 +222,47 @@ foreach(palabra in palabras)
 */
 
 
+/********************************************************************************************************************************************************************
+                            Ejercicio XIII
+********************************************************************************************************************************************************************
+Crear una aplicación que, cuando el usuario ingresa un número,calcule el factorial del mismo y lo muestre por pantalla.
+Nota: el factorial de un número es el producto de todos los números enteros desde 1 hasta n.
+Ejemplo: 5 != 1x2x3x4x5 = 120
+*/
+Console.WriteLine("Ingrese un número:");
+int numero6 = int.Parse(Console.ReadLine());
+for (int i = 0; i <= numero6 ; i++)
+{
+    numero6 *= i;
+}
 
 
+/********************************************************************************************************************************************************************
+                            Ejercicio XV
+********************************************************************************************************************************************************************
+Crear una aplicación que verifique, en tres oportunidades, si la clave ingresada por el usuario es correcta. La clave será 
+el nombre del usuario, si acierta mostrará por pantalla "Bienvenido, *usuario*", si no acierta mostrará "Acceso denegado",
+y cuando se cumplan los tres intentos mostrará "Clave bloqueada".
+*/
+int contador = 0;
+while (true)
+{
+    Console.WriteLine("Bienvenido!:");
+    Console.WriteLine("Ingrese su contraseña para continuar:");
+    var contra = Console.ReadLine().ToUpper();
+    if (contra != "JAVIER")
+    {
+        contador += 1;
+        if (contador == 3)
+        {
+            Console.WriteLine("Clave bloqueada.");
+            break;
+        }
+    }
+    else
+    {
+        Console.WriteLine("Bienvenido: " + contra);
+    }
+}
 
 
