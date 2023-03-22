@@ -277,3 +277,24 @@ foreach(var palabra2 in cadena)
 {
     Console.WriteLine("La palabra: " + palabra2 + " contiene: " + palabra2.ToString().Length + " caracteres." );
 }
+
+
+/********************************************************************************************************************************************************************
+                            Ejercicio XX
+********************************************************************************************************************************************************************
+Crear una aplicación que, cuando el usuario ingrese un número, indique la cantidad de números primos entre el cero y él, y su factorial.
+Ejemplo: si el usuario ingresa 5, indicará: "Hasta el 5 hay 3 números primos y el factorial de 5 es 120".
+*/
+Console.WriteLine("Ingrese un número:");
+int numero7  = int.Parse(Console.ReadLine());
+string primos = "";
+int factorial = 0;
+for (int i = 0; i <= numero7; i++)
+{
+    if (i % 2 == 0)
+    {
+        primos += 1;
+    }
+    factorial *= i;
+}
+Console.WriteLine("Hasta el" + numero7 + " hay " + primos + " y el factorial de " + numero7 + " es " + factorial);
