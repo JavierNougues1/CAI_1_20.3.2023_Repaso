@@ -1,5 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Diagnostics;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 /********************************************************************************************************************************************************************* 
                                  Ejercicio I
@@ -85,11 +90,65 @@ Nota: Palíndromo son palabras que al derecho y al revés se leen igual, como "a
 */
 Console.WriteLine("Introduzca una palabra:");
 string palabra = Console.ReadLine();
-string inversa =  new string(palabra.ToCharArray().Reverse().ToArray());
 
+//Opción corta:
+string inversa =  new string(palabra.ToCharArray().Reverse().ToArray());
 if (palabra.Equals(inversa))
 {
     Console.WriteLine(palabra + " - Es una palabra palíndromo ya que al revés se lee: " +  inversa);
+}
+
+// Otra opción: 
+int i = int.Parse(palabra);
+i = palabra.Length;
+for (int pos = i -1; pos >= 0; pos--)
+{
+    inversa += palabra[pos];
+}
+if (inversa == palabra)
+{
+    Console.WriteLine(palabra + " - Es una palabra palíndromo ya que al revés se lee: " + inversa);
+}
+
+
+/********************************************************************************************************************************************************************
+                            Ejercicio IV
+********************************************************************************************************************************************************************
+Crear una aplicación que, cuando el usuario ingresa dos palabras, inidque si estas son un anagrama. 
+Nota: anagrama son aquellas palabras que, reordenando sus letras, se forma una nueva palabra.
+*/
+//Me ayudé con el GitHub
+
+Console.WriteLine("Ingrese la primera palabra:");
+string pal1 = Console.ReadLine();
+Console.WriteLine("Ingrese la segunda palabra:");
+string pal2 = Console.ReadLine();
+
+if (pal1.Length != pal2.Length)
+{
+    Console.WriteLine("No son anagramas.");
+}
+else
+{
+    //Para saber si son anagramas tienen que tener las mismas palabras.
+    for (int iiiiii1 = 0; iiiiii1 < pal1.Length; iiiiii1++)
+    {
+        for (int iiiiii2 = 0; iiiiii2 < pal2.Length; iiiiii2++)
+        {
+            if (pal1[iiiiii1] == pal2[iiiiii2])
+            {
+                pal2 = pal2.Remove(iiiiii2, 1);
+            }
+        }
+    }
+    if (pal2.Length == 0)
+    {
+        Console.WriteLine("Son anagramas.");
+    }
+    else
+    {
+        Console.WriteLine("No son anagramas.");
+    }
 }
 
 
@@ -103,6 +162,15 @@ Console.WriteLine("Introduzca un número:");
 string numero = Console.ReadLine();
 string inversa2 = new string(numero.ToCharArray().Reverse().ToArray());
 Console.WriteLine("Número ingresado: " + numero + " -> Número a la inversa: " + inversa2);
+
+//Otra opción:
+numero = Console.ReadLine();
+int iiii = int.Parse(numero);
+iiii = numero.Length;
+for (int pos2 = iiii - 1; pos2 >= 0; pos2--)
+{
+    inversa2 += numero[pos2];
+}
 
 
 /********************************************************************************************************************************************************************
@@ -147,6 +215,31 @@ if (numero1 >= numero2 && numero1 >= numero3 && numero1 >= numero4 && numero1 >=
     }
 }
 
+// Opción 2, ayuda del GitHub
+int pedir = 5;
+int[] num = new int[pedir]; 
+menor = 0;
+intermedio = 0;
+mayor = 0;
+for (int i2 = 0; i2 <= pedir; i2++)
+{
+    Console.WriteLine("Ingrese un número:");
+    num[i2] = int.Parse(Console.ReadLine());
+    if (menor == 0)
+    {
+        menor = num[i2];
+        mayor = num[i2];
+    }
+    if (num[i2]>mayor)
+    {
+        mayor = num[i2];
+    }
+    if (num[i2]<menor)
+    {
+        menor = numero[i2];
+    }
+}
+
 
 /********************************************************************************************************************************************************************
                             Ejercicio VIII
@@ -155,7 +248,7 @@ Crear una aplicación que, cuando el usuario ingrese una fecha, calcule la difer
 días."
 */
 DateTime fecha = DateTime.Parse(Console.ReadLine());
-TimeSpan diferencia = DateTime.Now.Subtract(fecha);
+TimeSpan diferencia = DateTime.Today.Subtract(fecha);
 Console.WriteLine(diferencia);
 
 
@@ -231,9 +324,9 @@ Ejemplo: 5 != 1x2x3x4x5 = 120
 */
 Console.WriteLine("Ingrese un número:");
 int numero6 = int.Parse(Console.ReadLine());
-for (int i = 0; i <= numero6 ; i++)
+for (int ii = 0; ii <= numero6 ; ii++)
 {
-    numero6 *= i;
+    numero6 *= ii;
 }
 
 
@@ -289,12 +382,12 @@ Console.WriteLine("Ingrese un número:");
 int numero7  = int.Parse(Console.ReadLine());
 string primos = "";
 int factorial = 0;
-for (int i = 0; i <= numero7; i++)
+for (int iii = 0; iii <= numero7; iii++)
 {
     if (i % 2 == 0)
     {
         primos += 1;
     }
-    factorial *= i;
+    factorial *= iii;
 }
 Console.WriteLine("Hasta el" + numero7 + " hay " + primos + " y el factorial de " + numero7 + " es " + factorial);
